@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="portfolio" />
+    <meta name="description" content="웹 표준,웹 접근 포트폴리오 입니다." />
+    <meta name="keywords" content="웹표준, 웹접근,포트폴리오" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio site</title>
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- web fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Gothic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 웹 표준 적용 -->
+    <!-- 스킵 내비게이션 -->
+    <div id="skip">
+      <a rel="bookmark" href="#header_nav">전체 메뉴 바로가기</a>
+      <a rel="bookmark" href="#header_mobile_nav">전체 메뉴 바로가기</a>
+      <a rel="bookmark" href="#cont_ban">배너 영역 바로가기</a>
+      <a rel="bookmark" href="#cont_cont">컨텐츠 영역 바로가기</a>
+    </div>
+    <!-- //스킵 내비게이션 -->
+    <!--wrap -->
+    <div id="wrap">
+      <!--top ad -->
+      <div class="ad">
+        <span class="ad_cont">
+          인프런다운 새해선물, 무료강의 23개! 기회 놓치지 마세요!
+        </span>
+        <a href="#" class="icon">
+          <span class="ir_pm">close</span>
+        </a>
+      </div>
+      <!--//top ad -->
+      <!--mobile header -->
+      <div class="header" id="header_mobile_nav">
+        <h2 class="ir_su">전체 메뉴</h2>
+        <div class="nav mobile_nav_btn">
+          <input type="checkbox" id="hamburger" />
+          <label for="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="sidebar">
+            <div class="nav_mobile">
+              <div class="navbar-item">
+                <input
+                  id="item-link1"
+                  type="checkbox"
+                  name="item-link"
+                  onclick="NoMultiChk(this)"
+                />
+                <label for="item-link1">강의</label>
+                <ul class="sub-item sub-menu-x-1">
+                  <li>
+                    <input
+                      id="sub-item-link1"
+                      type="checkbox"
+                      name="sub-item-link"
+                      onclick="SubNoMultiChk(this)"
+                    />
+                    <label for="sub-item-link1">개발 / 프로그래밍</label>
+                    <ul class="sub-sub-item sub-sub-menu-1">
+                      <li><a href="#">웹 개발</a></li>
+                      <li><a href="#">프론트엔드</a></li>
+                      <li><a href="#">백엔드</a></li>
+                      <li><a href="#">풀스텍</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <input
+                      id="sub-item-link2"
+                      type="checkbox"
+                      name="sub-item-link"
+                      onclick="SubNoMultiChk(this)"
+                    />
+                    <label for="sub-item-link2">보안 / 네트워크</label>
+                    <ul class="sub-sub-item sub-sub-menu-2">
+                      <li><a href="#">보안</a></li>
+                      <li><a href="#">네트워크</a></li>
+                      <li><a href="#">시스템</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <input
+                      id="sub-item-link3"
+                      type="checkbox"
+                      name="sub-item-link"
+                      onclick="SubNoMultiChk(this)"
+                    />
+                    <label for="sub-item-link3">데이터 사이언스</label>
+                    <ul class="sub-sub-item sub-sub-menu-3">
+                      <li><a href="#">데이터 분석</a></li>
+                      <li><a href="#">인공지능</a></li>
+                      <li><a href="#">데이터 시각화</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar-item">
+                <input
+                  id="item-link2"
+                  type="checkbox"
+                  name="item-link"
+                  onclick="NoMultiChk(this)"
+                />
+                <label for="item-link2">로드맵</label>
+                <ul class="sub-item sub-menu-x-2">
+                  <li>
+                    <input
+                      id="sub-item-link4"
+                      type="checkbox"
+                      name="sub-item-link"
+                      onclick="SubNoMultiChk(this)"
+                    />
+                    <label for="sub-item-link4">개발 / 프로그래밍</label>
+                    <ul class="sub-sub-item sub-sub-menu-4">
+                      <li><a href="#">웹 개발</a></li>
+                      <li><a href="#">프론트엔드</a></li>
+                      <li><a href="#">백엔드</a></li>
+                      <li><a href="#">풀스텍</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <input
+                      id="sub-item-link5"
+                      type="checkbox"
+                      name="sub-item-link"
+                      onclick="SubNoMultiChk(this)"
+                    />
+                    <label for="sub-item-link5">보안 / 네트워크</label>
+                    <ul class="sub-sub-item sub-sub-menu-5">
+                      <li><a href="#">보안</a></li>
+                      <li><a href="#">네트워크</a></li>
+                      <li><a href="#">시스템</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <input
+                      id="sub-item-link6"
+                      type="checkbox"
+                      name="sub-item-link"
+                      onclick="SubNoMultiChk(this)"
+                    />
+                    <label for="sub-item-link6">데이터 사이언스</label>
+                    <ul class="sub-sub-item sub-sub-menu-6">
+                      <li><a href="#">데이터 분석</a></li>
+                      <li><a href="#">인공지능</a></li>
+                      <li><a href="#">데이터 시각화</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar-item">
+                <input
+                  id="item-link3"
+                  type="checkbox"
+                  name="item-link"
+                  onclick="NoMultiChk(this)"
+                />
+                <label for="item-link3">멘토링</label>
+                <ul class="sub-item sub-menu-x-3">
+                  <li>
+                    <input
+                      id="sub-item-link7"
+                      type="checkbox"
+                      name="sub-item-link"
+                      onclick="SubNoMultiChk(this)"
+                    />
+                    <label for="sub-item-link7">개발 / 프로그래밍</label>
+                    <ul class="sub-sub-item sub-sub-menu-7">
+                      <li><a href="#">웹 개발</a></li>
+                      <li><a href="#">프론트엔드</a></li>
+                      <li><a href="#">백엔드</a></li>
+                      <li><a href="#">풀스텍</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <input
+                      id="sub-item-link8"
+                      type="checkbox"
+                      name="sub-item-link"
+                      onclick="SubNoMultiChk(this)"
+                    />
+                    <label for="sub-item-link8">보안 / 네트워크</label>
+                    <ul class="sub-sub-item sub-sub-menu-8">
+                      <li><a href="#">보안</a></li>
+                      <li><a href="#">네트워크</a></li>
+                      <li><a href="#">시스템</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <input
+                      id="sub-item-link9"
+                      type="checkbox"
+                      name="sub-item-link"
+                      onclick="SubNoMultiChk(this)"
+                    />
+                    <label for="sub-item-link9">데이터 사이언스</label>
+                    <ul class="sub-sub-item sub-sub-menu-9">
+                      <li><a href="#">데이터 분석</a></li>
+                      <li><a href="#">인공지능</a></li>
+                      <li><a href="#">데이터 시각화</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar-item">
+                <input
+                  id="item-link4"
+                  type="checkbox"
+                  name="item-link"
+                  onclick="NoMultiChk(this)"
+                />
+                <label for="item-link4">커뮤니티</label>
+                <ul class="sub-item sub-menu-x-4">
+                  <li>
+                    <input
+                      id="sub-item-link10"
+                      type="checkbox"
+                      name="sub-item-link"
+                      onclick="SubNoMultiChk(this)"
+                    />
+                    <label for="sub-item-link10">개발 / 프로그래밍</label>
+                    <ul class="sub-sub-item sub-sub-menu-10">
+                      <li><a href="#">웹 개발</a></li>
+                      <li><a href="#">프론트엔드</a></li>
+                      <li><a href="#">백엔드</a></li>
+                      <li><a href="#">풀스텍</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <input
+                      id="sub-item-link11"
+                      type="checkbox"
+                      name="sub-item-link"
+                      onclick="SubNoMultiChk(this)"
+                    />
+                    <label for="sub-item-link11">보안 / 네트워크</label>
+                    <ul class="sub-sub-item sub-sub-menu-11">
+                      <li><a href="#">보안</a></li>
+                      <li><a href="#">네트워크</a></li>
+                      <li><a href="#">시스템</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <input
+                      id="sub-item-link12"
+                      type="checkbox"
+                      name="sub-item-link"
+                      onclick="SubNoMultiChk(this)"
+                    />
+                    <label for="sub-item-link12">데이터 사이언스</label>
+                    <ul class="sub-sub-item sub-sub-menu-12">
+                      <li><a href="#">데이터 분석</a></li>
+                      <li><a href="#">인공지능</a></li>
+                      <li><a href="#">데이터 시각화</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-right">
+          <div class="Search_container">
+            <span class="ir_pm">검색</span>
+            <input type="text" placeholder="Search" />
+            <div class="search"></div>
+          </div>
+          <a href="#">
+            <button class="icon_button icon_login">
+              <span class="ir_pm">login</span>
+            </button>
+          </a>
+        </div>
+      </div>
+      <!--//mobile header -->
+      <!--header -->
+      <div id="header" role="header">
+        <a href="#" class="icon">
+          <span class="ir_pm">logo</span>
+        </a>
+        <div class="navbar-menu">
+          <!--web header -->
+          <div class="header" id="header_nav">
+            <h2 class="ir_su">전체 메뉴</h2>
+            <div class="nav">
+              <div class="navbar-item">
+                <a href="#">강의</a>
+                <ul class="sub-item sub-menu-x-1">
+                  <li>
+                    <a href="#">개발 / 프로그래밍</a>
+                    <ul class="sub-sub-item sub-sub-menu-y-1">
+                      <li><a href="#">웹 개발</a></li>
+                      <li><a href="#">프론트엔드</a></li>
+                      <li><a href="#">백엔드</a></li>
+                      <li><a href="#">풀스텍</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">보안 / 네트워크</a>
+                    <ul class="sub-sub-item sub-sub-menu-y-2">
+                      <li><a href="#">보안</a></li>
+                      <li><a href="#">네트워크</a></li>
+                      <li><a href="#">시스템</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">데이터 사이언스</a>
+                    <ul class="sub-sub-item sub-sub-menu-y-3">
+                      <li><a href="#">데이터 분석</a></li>
+                      <li><a href="#">인공지능</a></li>
+                      <li><a href="#">데이터 시각화</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar-item">
+                <a href="#">로드맵</a>
+                <ul class="sub-item sub-menu-x-2">
+                  <li>
+                    <a href="#">개발 / 프로그래밍</a>
+                    <ul class="sub-sub-item sub-sub-menu-y-1">
+                      <li><a href="#">웹 개발</a></li>
+                      <li><a href="#">프론트엔드</a></li>
+                      <li><a href="#">백엔드</a></li>
+                      <li><a href="#">풀스텍</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">보안 / 네트워크</a>
+                    <ul class="sub-sub-item sub-sub-menu-y-2">
+                      <li><a href="#">보안</a></li>
+                      <li><a href="#">네트워크</a></li>
+                      <li><a href="#">시스템</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">데이터 사이언스</a>
+                    <ul class="sub-sub-item sub-sub-menu-y-3">
+                      <li><a href="#">데이터 분석</a></li>
+                      <li><a href="#">인공지능</a></li>
+                      <li><a href="#">데이터 시각화</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar-item">
+                <a href="#">멘토링</a>
+                <ul class="sub-item sub-menu-x-3">
+                  <li>
+                    <a href="#">개발 / 프로그래밍</a>
+                    <ul class="sub-sub-item sub-sub-menu-y-1">
+                      <li><a href="#">웹 개발</a></li>
+                      <li><a href="#">프론트엔드</a></li>
+                      <li><a href="#">백엔드</a></li>
+                      <li><a href="#">풀스텍</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">보안 / 네트워크</a>
+                    <ul class="sub-sub-item sub-sub-menu-y-2">
+                      <li><a href="#">보안</a></li>
+                      <li><a href="#">네트워크</a></li>
+                      <li><a href="#">시스템</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">데이터 사이언스</a>
+                    <ul class="sub-sub-item sub-sub-menu-y-3">
+                      <li><a href="#">데이터 분석</a></li>
+                      <li><a href="#">인공지능</a></li>
+                      <li><a href="#">데이터 시각화</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar-item">
+                <a href="#">커뮤니티</a>
+                <ul class="sub-item sub-menu-x-4">
+                  <li>
+                    <a href="#">개발 / 프로그래밍</a>
+                    <ul class="sub-sub-item sub-sub-menu-y-1">
+                      <li><a href="#">웹 개발</a></li>
+                      <li><a href="#">프론트엔드</a></li>
+                      <li><a href="#">백엔드</a></li>
+                      <li><a href="#">풀스텍</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">보안 / 네트워크</a>
+                    <ul class="sub-sub-item sub-sub-menu-y-2">
+                      <li><a href="#">보안</a></li>
+                      <li><a href="#">네트워크</a></li>
+                      <li><a href="#">시스템</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">데이터 사이언스</a>
+                    <ul class="sub-sub-item sub-sub-menu-y-3">
+                      <li><a href="#">데이터 분석</a></li>
+                      <li><a href="#">인공지능</a></li>
+                      <li><a href="#">데이터 시각화</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-right">
+            <div class="Search_container">
+              <span class="ir_pm">검색</span>
+              <input type="text" placeholder="Search" />
+              <div class="search"></div>
+            </div>
+            <a href="#" class="overflow_hidden btn_bg1">
+              <button class="button login">
+                로그인<span class="ani"></span>
+              </button>
+            </a>
+            <a href="#" class="overflow_hidden btn_bg2">
+              <button class="button join">
+                회원가입<span class="ani"></span>
+              </button>
+            </a>
+          </div>
+        </div>
+        <!--//web header -->
+      </div>
+      <!--//header -->
+      <!--contents -->
+      <div id="contents">
+        <!--main banner slide -->
+        <div id="cont_ban">
+          <div class="container">
+            <div class="slide slide_wrap">
+              <div class="slide_prev_button slide_button">
+                <span class="ir_pm">이전</span>
+              </div>
+              <div class="slide_next_button slide_button">
+                <span class="ir_pm">다음</span>
+              </div>
+            </div>
+            <ul class="slide_pagination"></ul>
+          </div>
+        </div>
+        <!--//main banner slide -->
+        <!--cont slide -->
+        <div id="cont_cont">
+          <div class="container">
+            <div class="section">
+              <div class="section_header">무료강의? 오히려 좋아</div>
+              <div class="cont_wrap">
+                <div class="cont_list cont1"></div>
+              </div>
+              <div class="btn_wrap">
+                <button class="prev1 cont_prev_button cont_button disabled">
+                  <span class="ir_pm">이전</span>
+                </button>
+                <button class="next1 cont_next_button cont_button">
+                  <span class="ir_pm">다음</span>
+                </button>
+              </div>
+            </div>
+            <div class="section">
+              <div class="section_header">왕초보도 할 수 있어요</div>
+              <div class="cont_wrap">
+                <div class="cont_list cont2"></div>
+              </div>
+              <div class="btn_wrap">
+                <button class="prev2 cont_prev_button cont_button disabled">
+                  <span class="ir_pm">이전</span>
+                </button>
+                <button class="next2 cont_next_button cont_button">
+                  <span class="ir_pm">다음</span>
+                </button>
+              </div>
+            </div>
+            <div class="section">
+              <div class="section_header">
+                기본부터 실무까지 제시해주는 로드맵
+              </div>
+              <div class="cont_wrap">
+                <div class="cont_list cont3"></div>
+              </div>
+              <div class="btn_wrap">
+                <button class="prev3 cont_prev_button cont_button disabled">
+                  <span class="ir_pm">이전</span>
+                </button>
+                <button class="next3 cont_next_button cont_button">
+                  <span class="ir_pm">다음</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--//cont slide -->
+      </div>
+      <!--//contents -->
+      <!--footer -->
+      <div id="footer" role="footer">
+        <div class="container footer_container">
+          <ul class="footer_info_bottom">
+            <li>
+              (주)인프랩 | 대표자: 이형주 | 사업자번호: 499-81-00612 사업자 정보
+              확인
+            </li>
+            <li>
+              통신판매업: 2018-성남분당B-0062 | 개인정보보호책임자: 이동욱 |
+              이메일: info@inflearn.com
+            </li>
+            <li>
+              주소: 경기도 성남시 분당구 대왕판교로 660 유스페이스 1A동 405호
+            </li>
+            <li>©INFLAB. ALL RIGHTS RESERVED</li>
+          </ul>
+          <ul class="footer_sns">
+            <li><span class="ir_pm">sns</span></li>
+            <li><span class="ir_pm">채팅</span></li>
+            <li><span class="ir_pm">홈페이지</span></li>
+            <li><span class="ir_pm">E-mail</span></li>
+          </ul>
+        </div>
+      </div>
+      <!--//footer -->
+    </div>
+    <!-- //wrap -->
+    <!--layer login, join popup -->
+    <div class="layer-bg"></div>
+    <div class="popup">
+      <a href="#" class="icon">
+        <span class="ir_pm">close</span>
+      </a>
+      <div class="sub-tab">
+        <ul class="tab-btn">
+          <li class="on" data-id="tabLogin"><a href="#">로그인</a></li>
+          <li data-id="tabJoin"><a href="#">회원가입</a></li>
+        </ul>
+        <div class="tab-box">
+          <div class="tab" id="tabLogin">
+            <form>
+              <input
+                type="text"
+                name="email"
+                class="text-field"
+                placeholder="아이디"
+              />
+              <input
+                type="password"
+                name="password"
+                class="text-field"
+                placeholder="비밀번호"
+              />
+              <a href="#" class="overflow_hidden">
+                <button class="button submit-btn">
+                  로그인<span class="ani"></span>
+                </button>
+              </a>
+            </form>
+            <div class="links">
+              <a href="#">비밀번호를 잊어버리셨나요?</a>
+            </div>
+            <div class="subTitBox">
+              <div class="border"></div>
+              <span class="subTxt">간편 로그인</span>
+              <div class="border"></div>
+            </div>
+            <ul class="footer_sns">
+              <li><span class="ir_pm">sns</span></li>
+              <li><span class="ir_pm">채팅</span></li>
+              <li><span class="ir_pm">홈페이지</span></li>
+              <li><span class="ir_pm">E-mail</span></li>
+            </ul>
+          </div>
+          <div class="tab" id="tabJoin">
+            <form>
+              <input
+                type="text"
+                name="email"
+                class="text-field"
+                placeholder="이메일"
+              />
+              <input
+                type="password"
+                name="password"
+                class="text-field"
+                placeholder="비밀번호"
+              />
+              <input
+                type="password"
+                name="password"
+                class="text-field"
+                placeholder="비밀번호 확인"
+              />
+              <a href="#" class="overflow_hidden">
+                <button class="button submit-btn">
+                  가입하기<span class="ani"></span>
+                </button>
+              </a>
+            </form>
+            <div class="subTitBox">
+              <div class="border"></div>
+              <span class="subTxt">간편 회원가입</span>
+              <div class="border"></div>
+            </div>
+            <ul class="footer_sns">
+              <li><span class="ir_pm">sns</span></li>
+              <li><span class="ir_pm">채팅</span></li>
+              <li><span class="ir_pm">홈페이지</span></li>
+              <li><span class="ir_pm">E-mail</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //layer popup -->
+    <!--js -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    ></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./js/slide.js"></script>
+    <script type="text/javascript" src="./js/animation.js"></script>
+    <script type="text/javascript" src="./js/popup.js"></script>
+    <script type="text/javascript" src="./js/menu.js"></script>
+    <!--//js -->
+  </body>
+</html>
